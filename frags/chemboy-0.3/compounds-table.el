@@ -1,0 +1,36 @@
+;;(defpackage :compounds-table (:use :cl :compound-names))
+;;(in-package :compounds-table)
+
+;; Miscellaneous compounds
+(defcompound "Na Cl" "table salt" "ionic, dissolves easily in water")
+(defcompound "C6 H12 O6" "glucose" "a simple sugar")
+(defcompound "H2 S O4" "sulfuric acid")
+(defcompound "H2 O" "water")
+(defcompound "H2" "diatomic hydrogen")
+(defcompound "O2" "diatomic oxygen")
+(defcompound "C O2" "carbon dioxide")
+(defcompound "C O" "carbon monoxide")
+
+;; Some hydrocarbons, the alkanes in particular
+(defcompound "C H4" "methane" "or natural gas")
+(defcompound "C2 H6" "ethane")
+(defcompound "C3 H8" "propane")
+(defcompound "C4 H10" "butane")
+(defcompound "C5 H12" "pentane")
+(defcompound "C6 H14" "hexane")
+(defcompound "C7 H16" "heptane")
+(defcompound "C8 H18" "octane")
+(defcompound "C9 H20" "nonane")
+(defcompound "C10 H22" "decane")
+
+;; Polyatomic ions
+(defcompound "C O3" "carbonate" "charge 2-")
+(defcompound "H C O3" "bicarbonate" "charge 1-")
+(defcompound "N O3" "nitrate" "charge 1-")
+(defcompound "P O4" "phosphate" "charge 3-")
+(defcompound "S O4" "sulfate" "charge 2-")
+(defcompound "S O3" "sulfite" "charge 2-")
+(defcompound "N H4" "ammonium" "charge 1+")
+(defcompound "O H" "hydroxide" "charge 1-")
+(defcompound "C N" "cyanide" "charge 1-")
+(defcompound "C5 H5 N H" "pyridinium" "charge 1+")

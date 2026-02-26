@@ -1,0 +1,11 @@
+(load-file "compound-names.el")
+;; barfs:
+(load-file "compounds-table.el") 
+;; barfs
+(load-file "conversions.el") 
+;; barfs
+(load-file "query-parsing.el") 
+(load-file "rootsolve.el") ;; barfs
+(load-file "text-interface.el")
+(load-file "gui.el")
+(load-file "capi-gui.el")

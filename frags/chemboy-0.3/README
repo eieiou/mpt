@@ -1,0 +1,92 @@
+Chemboy 0.3
+-----------
+
+Chemboy is a program to do basic chemistry calculations. It was born
+out of the memory of a chemistry class which assigned large numbers of
+problems which could be solved by doing the same tedious calculation
+over and over again. For example, suppose that you wanted to know the
+mass of 2.8 mol of methane (C H4). You could figure that since the
+atomic weight of carbon was 12.011 g/mol (tediously looking it up in
+the periodic table) and the atomic weight of hydrogen was 1.00794
+g/mol (or about 1 g/mol), and there were four hydrogens, the formula
+weight of C H4 was 12.011+4*1.00794 = 16.042759 g/mol, and multiply
+this by 2.8 to get the final answer.
+
+That's a lot of work. So, with Chemboy, you can simplify most parts of
+that process. To save yourself the trouble of looking in the periodic
+table, you can type "c" and "h" to look up carbon and hydrogen. (You
+could also type "carbon" and "hydrogen", or even their atomic numbers,
+but why would you want to?) You can type "C H4" (or "c h4"---Chemboy
+isn't case sensitive) to get the formula weight of methane. Or you
+could just ask Chemboy for the final answer from the beginning by
+typing "2.8 mol C H4", to which it would reply "2.8 mol of C H4,
+44.919724 g, 62.77467 L at STP". See how much time this could save?
+
+Chemboy can also speed up use of Boyle's Law, Charles' Law, the
+Combined gas Law, and the Ideal gas Law. Chemboy does the equivalent
+of solving all the equations for you behind the scenes (the specific
+technique is kind of cool, but beyond the scope of this readme).
+
+
+Installation
+------------
+
+Chemboy can run just about anywhere in some form or another. The
+simplest way to install it, for Lispers, is to use asdf-install. If
+you're on Windows, you should probably download the installer for
+Windows.
+
+There are three interfaces. First, and most widely useful, is the
+text-based interface. This will run anywhere. It presents you with a
+simple prompt at which you can type queries. It is perfectly usable,
+and the only thing wrong with it is that some people are oddly biased
+against anything that resembles a command line.
+
+The second interface is based on Ltk. It requires Tcl/tk, and should
+run well on Linux, Mac OS X, and Windows---but don't count on
+Windows. It doesn't support the laws (ideal gas law, etc.), but it can
+do the rest fairly well. It is still rough and unfinished.
+
+Finally, for those of you lucky enough to use LispWorks, there is a
+CAPI-based GUI. This GUI looks snazzy on Linux, and it's fully
+featured on any OS, but it looks utterly lousy on Windows. So I repeat
+my mantra: don't count on Windows.
+
+Chemboy is ANSI Common Lisp, and should run on any Common Lisp
+implementation. That said, you can't tell until you test. Chemboy has
+been tested on:
+
+* SBCL 0.8.10
+* LispWorks
+* Corman Lisp 2.5
+
+Corman Lisp requires a little extra setting up, but that's the price
+you pay for using the youngest and least ANSI-compliant (but very
+useful) Common Lisp out there.
+
+
+Starting it
+-----------
+
+To start the text interface, call (chemboy-text:chemboy-repl).
+
+To start the Ltk interface, load gui.lisp in the Chemboy source
+distribution and call (chemboy-gui:run-chemboy-gui)
+
+To start the CAPI interface, load capi-gui.lisp in the Chemboy source
+didstribution and call:
+(capi:display (make-instance 'capi-gui::chemboy-capi-gui))
+
+
+License
+-------
+
+Released under the LLGPL (practically identical with the LGPL).
+
+
+
+For more information, see http://common-lisp.net/project/chemboy/
+
+
+Peter Scott <sketerpot@gmail.com>
+November 2004
