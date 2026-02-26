@@ -14,4 +14,4 @@ Prerequisites:
   autotools
   make
   emacs
-  
+  cl-lib.el
