@@ -16,4 +16,5 @@ Prerequisites:
   autotools
   make
   emacs
-  cl-lib.el
+  cl-lib.el - available on github
+  
