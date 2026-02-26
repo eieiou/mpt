@@ -1,0 +1,9 @@
+;;(require 'cl-lib)
+;;(cl-defparameter *my-list* nil)
+;;(cl-defparameter *my-list* nil "A parameter initialized to nil")
+;;(cl-defparameter *my-list* "hello world")
+;;(cl-defparameter *my-list* '())
+
+(load-file "unittest.el")
+(load-file "lments.el")
+(load-file "table.el")

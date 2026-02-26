@@ -1,4 +1,14 @@
-An effort to port a working emacs lisp translation of various snippets of Mendeleev's periodic table found on common-lisp.net because the GCL was unavailable on certain hardware, where emacs was functional. The attraction of the project is to use the natural-language parser of lisp to help unit translations and basic chemical calculations while doing this with a minimalistic style. We aim to produce no bloatware or timesinks like asdf or other paraphernalia. Was found wanting other free software, specifically (taken as a whole) various python or perl implementations. Ideally this project will be included in the emacs distribution if we ever reach version 1.0 satisfaction, and the licenses of common-lisp.net meet emacs requirements.
+An effort to port a working emacs lisp translation of various snippets
+of Mendeleev's periodic table found on common-lisp.net because the GCL
+was unavailable on certain hardware, where emacs was functional. The
+attraction of the project is to use the natural-language parser of
+lisp to help unit translations and basic chemical calculations while
+doing this with a minimalistic style. We aim to produce no bloatware
+or timesinks like asdf or other paraphernalia. Was found wanting other
+free software, specifically (taken as a whole) various python or perl
+implementations. Ideally this project will be included in the emacs
+distribution if we ever reach version 1.0 satisfaction, and the
+licenses of common-lisp.net meet emacs requirements.
 
 Prerequisites:
   autotools

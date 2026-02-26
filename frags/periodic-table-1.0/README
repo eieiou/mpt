@@ -1,0 +1,25 @@
+Periodic Table in Common Lisp
+Copyright 2004 Peter Scott
+Released under the LLGPL (see http://opensource.franz.com/preamble.html).
+
+This package defines a package, :elements, with an ELEMENT structure
+and a number of functions to search the periodic table.
+
+For example:
+
+(use-package :elements)
+
+(element-name (symbol-element "Kr")) => "Krypton"
+(electronegativity-element 4.0)
+=>
+#S(ELEMENT
+   :NAME "Fluorine"
+   :ATOMIC-WEIGHT 18.9984
+   :ATOMIC-NUMBER 9
+   :OXIDATION-STATES "-1"
+   :BOILING-POINT 85.0
+   :SYMBOL "F"
+   :ELECTRONEGATIVITY 3.98)
+
+If you have any questions, please ask them on the chemboy-devel mailing list
+at <chemboy-devel@common-lisp.net>.
