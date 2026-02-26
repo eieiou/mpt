@@ -1,0 +1,8 @@
+Standard gnu make procedure:
+> ./configure
+> make
+> make install
+
+See directory frags for components to this assembly.
+See directory elisp for the functional elisp code.
+File dotemacs contains instructions how to access this code with a typical emacs installation.
