@@ -1,0 +1,9 @@
+To translate common-lisp into elisp:
+
+% cp file.lisp file.el
+
+* comment out any asdf revision code or project summary
+* insert "(require 'cl-lib)" somewhere near the top
+* change the macro or function calls as appropriate
+* check with emacs to ensure error-free parsing-compilation
+
