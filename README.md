@@ -10,6 +10,8 @@ implementations. Ideally this project will be included in the emacs
 distribution if we ever reach version 1.0 satisfaction, and the
 licenses of common-lisp.net meet emacs requirements.
 
+Also see ./frags/chemboy-0.3/README for why spend time on this project
+
 Prerequisites:
   autotools
   make
