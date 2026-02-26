@@ -1,0 +1,14 @@
+* version 0.1 2026-02-26
+
+** conjure up gnu make structure:
+- Makefile
+- elisp/Makefile
+
+** translate from common-lisp .lisp to elisp .el:
+- frags/chemical-compounds-1.0.2/*.lisp
+- frags/chemboy-0.3/*.lisp
+
+** verify
+- elisp/*.el
+
+
